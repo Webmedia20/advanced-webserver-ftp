@@ -22,6 +22,13 @@
         }
 
         echo 'PHP connected successfully to DB';
+
+        $ftp_server = 'ftp';
+
+        // Verbindung herstellen oder das Skript beenden
+        $ftp = ftp_connect($ftp_server) or exit("Konnte keine Verbindung zu $ftp_server aufbauen");
+
+        // phpinfo(INFO_MODULES);
     ?>
     </p>
     <sub>Made by Webmedia 2.0 in Karlsruhe</sub>
